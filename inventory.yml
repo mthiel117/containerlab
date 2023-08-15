@@ -1,0 +1,10 @@
+anta_inventory:
+  hosts:
+  - host: 127.0.0.1
+    name: SPINE1
+    port: 44301
+    tags: ['fabric', 'spine', 'lab']
+  - host: 127.0.0.1
+    name: SPINE2
+    port: 44302
+    tags: ['fabric', 'spine', 'lab']
