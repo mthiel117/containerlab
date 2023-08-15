@@ -3,8 +3,24 @@ anta_inventory:
   - host: 127.0.0.1
     name: SPINE1
     port: 44301
-    tags: ['fabric', 'spine', 'lab']
+    tags: ['fabric', 'spine']
   - host: 127.0.0.1
     name: SPINE2
     port: 44302
-    tags: ['fabric', 'spine', 'lab']
+    tags: ['fabric', 'spine']
+  - host: 127.0.0.1
+    name: LEAF1
+    port: 44303
+    tags: ['fabric', 'leaf']
+  - host: 127.0.0.1
+    name: LEAF2
+    port: 44304
+    tags: ['fabric', 'leaf']
+  - host: 127.0.0.1
+    name: LEAF3
+    port: 44305
+    tags: ['fabric', 'leaf']
+  - host: 127.0.0.1
+    name: LEAF4
+    port: 44305
+    tags: ['fabric', 'leaf']
