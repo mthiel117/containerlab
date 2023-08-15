@@ -10,6 +10,8 @@ anta.tests.software:
         - v1.22.1
         - v1.24.2
         - v1.27.0
+  - VerifyEOSExtensions:
+
 anta.tests.configuration:
   - VerifyZeroTouch: # Verifies ZeroTouch is disabled.
   - VerifyRunningConfigDiffs:
@@ -23,7 +25,9 @@ anta.tests.routing.bgp:
 anta.tests.interfaces:
   - VerifyInterfaceUtilization:
   - VerifyLoopbackCount:
-      number: 3
+      number: 1
+  - VerifyL2MTU:
+      mtu: 9214
 
 anta.tests.system:
   - VerifyReloadCause:
@@ -38,3 +42,11 @@ anta.tests.system:
   # Verifies the device uptime is higher than a value.
   - VerifyUptime:
       minimum: 3600
+
+# anta.tests.field_notices:
+#   - VerifyFieldNotice44Resolution:
+#   - VerifyFieldNotice72Resolution:
+
+# anta.tests.aaa:
+#   - VerifyTacacsSourceIntf:
+#       vrf: MGMT
